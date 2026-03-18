@@ -4,6 +4,8 @@ import { useState } from "react"
 
 export function ItemList({items}) {
     var [sortBy, setSortBy] = useState ("name");
+    const itemsData = [...items]
+
 
     const sorting = (a, b) => {
         var orderA;
@@ -41,8 +43,8 @@ export function ItemList({items}) {
             </p>
 
             <ul>
-                {items.sort(sorting).map((item) => (
-                    <Item key={item.id} name={item.name} quantity={item.quantity} category={item.category}></Item>
+                {itemsData.sort(sorting).map((item, index) => (
+                    <Item key={index} name={item.name} quantity={item.quantity} category={item.category}></Item>
                 ))}
             
             </ul>

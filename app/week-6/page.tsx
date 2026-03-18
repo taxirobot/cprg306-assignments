@@ -6,8 +6,8 @@ import itemsData from "./items.json" with {type: "JSON"}
 
 export default function Page() {
     var [items, setItems] = useState (itemsData);
-
     const handleAddItem = (item) => {
+        alert (`${item.name}`)
         const newItems = [...items, {id: item.id, name: item.name, quantity: item.quantity, category: item.category}]
         setItems(newItems);
     }

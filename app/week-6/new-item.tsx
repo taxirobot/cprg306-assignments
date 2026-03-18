@@ -23,8 +23,8 @@ export function NewItem({onAddItem}) {
         }
 
         event.preventDefault();
-        const item = <Item name={name} quantity={quantity} category={category}></Item>;
-        console.log(item);
+        let item = {name: name, quantity: quantity, category: category}
+        console.log(item.name);
         onAddItem(item);
     }
 
