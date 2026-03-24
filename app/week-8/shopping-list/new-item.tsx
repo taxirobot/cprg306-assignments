@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { Item } from "../../week-3/item";
 
 export function NewItem({onAddItem}) {
     var [name, setName] = useState("");
