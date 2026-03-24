@@ -3,11 +3,11 @@ import { useUserAuth } from "./_utils/auth-context";
 
 export default function Page() {
     
-    const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
+    // const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
  
-    gitHubSignIn();
+    // gitHubSignIn();
  
-    firebaseSignOut();
+    // firebaseSignOut();
 
     <p>
         Welcome, {user.displayName} ({user.email})
